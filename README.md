@@ -1,5 +1,10 @@
 # node-crash-course
-## Test project with node basics from The Net Ninja - https://www.youtube.com/watch?v=zb3Qk8SG5Ms
+## Test project with node basics from The Net Ninja
+Author: 
+- [iamshaunjp](https://github.com/iamshaunjp)
+
+Tutorial series:
+- https://www.youtube.com/watch?v=zb3Qk8SG5Ms
 
 ## Instalation 
 ### Install Node JS
