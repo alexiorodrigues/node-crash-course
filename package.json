@@ -1,0 +1,26 @@
+{
+  "name": "crash-course",
+  "version": "1.0.0",
+  "description": "## Test project with node basics from The Net Ninja",
+  "main": "files.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexiorodrigues/node-crash-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexiorodrigues/node-crash-course/issues"
+  },
+  "homepage": "https://github.com/alexiorodrigues/node-crash-course#readme",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}

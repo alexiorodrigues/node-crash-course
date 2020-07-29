@@ -1,9 +1,20 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash');
 
 const server = http.createServer((req, res) => {
+  // lodash
+  const num = _.random(0, 200);
+  console.log(num);
+
+  const greet = _.once(() => {
+    console.log('hello');
+  });
+
+  greet();
+
   // Request object
-  console.log(req.url, req.method);
+  //console.log(req.url, req.method);
 
   // Response object
 
@@ -32,7 +43,7 @@ const server = http.createServer((req, res) => {
       break;
 
     // Redirect
-    case '/about-me':
+    case '/about-bla':
       res.statusCode = 301;
       res.setHeader('Location', '/about');
       res.end();
