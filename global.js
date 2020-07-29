@@ -1,4 +1,4 @@
-// Global object
+// Global - Global context object
 
 // console.log(global);
 
