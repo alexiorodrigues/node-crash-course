@@ -25,8 +25,38 @@ sudo apt-get install -y nodejs
 
 ## Run the project
 
-### Run node
+### Keys required
+
+This project uses Mongo Atlas
+
+1. Create a new account at https://www.mongodb.com/cloud/atlas
+2. Create a new document named `dbSettings.js` in the project root
+3. Fill it with this template + your Mongo credentials
+
+```js
+const username = 'username';
+const password = 'password';
+const cluster = 'cluster';
+const project = 'project';
+
+const address =
+  'mongodb+srv://' +
+  username +
+  ':' +
+  password +
+  '@' +
+  cluster +
+  '.jnchg.mongodb.net/' +
+  project +
+  '?retryWrites=true&w=majority';
+
+module.exports = {
+  address,
+};
+```
+
+### Run App
 
 ```bash
-node test
+nodemon app
 ```
