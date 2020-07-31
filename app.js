@@ -3,12 +3,13 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 
+const dbAddress = require('./dbSettings');
+
 // express app
 const app = express();
 
 // Connect to MongoDB
-const dbURI =
-  'mongodb+srv://<user>:<password>@nodetuts.jnchg.mongodb.net/node-tuts?retryWrites=true&w=majority';
+const dbURI = dbAddress.address;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
