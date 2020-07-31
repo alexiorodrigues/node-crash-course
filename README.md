@@ -25,9 +25,9 @@ sudo apt-get install -y nodejs
 
 ## Run the project
 
-### Keys required
+### DB configuration file required
 
-This project uses Mongo Atlas
+This project requires a Mongo Atlas cluster
 
 1. Create a new account at https://www.mongodb.com/cloud/atlas
 2. Create a new document named `dbSettings.js` in the project root
